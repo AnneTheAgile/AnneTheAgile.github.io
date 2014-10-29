@@ -18,7 +18,8 @@
 code {
   font-family: 'Courier', monospace;
   font-size: 14px;
-  color: #999
+  color: #ccc; /* #999 Black bkgd is bad 2014-10-28Tue.20:20:10 */
+  word-wrap: normal; /* also it was not wrapping. */
 }
  
 // Solarized Light Pygments 
