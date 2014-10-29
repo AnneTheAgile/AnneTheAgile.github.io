@@ -4,21 +4,26 @@
 /***********************/
 
 .highlight { 
-  background-color: $darkerGray;
+  background-color: #F8F8FF;  /* GhostWhite #F8F8FF  was  $darkerGray: #222; VARIABLE was $darkerGray; */
   padding: 5px 10px;
   margin: 20px 0;
+  overflow-x: auto; /* add these 2 from below  2014-10-28Tue.20:41:22 */
+  word-wrap: normal; 
 }
 
 .highlight pre {
   /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
-  word-break: break-all;
+  /* delete these 2 
+word-break: break-all;
   word-wrap: break-word;
+  *** */
 }
  
 code {
   font-family: 'Courier', monospace;
   font-size: 14px;
-  color: #ccc; /* #999 Black bkgd is bad 2014-10-28Tue.20:20:10 */
+  /* deleted this in favor of plain hilt above */
+  /* color: #ccc;  #999 Black bkgd is bad 2014-10-28Tue.20:20:10 */
   word-wrap: normal; /* also it was not wrapping. */
 }
  
@@ -164,5 +169,8 @@ code {
  /* Add to css/syntax.css 
 http://demisx.github.io/jekyll/2014/01/13/improve-code-highlighting-in-jekyll.html
 */
+
+/************ USELESS
 .post > .highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
 .post > .highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+**********/
